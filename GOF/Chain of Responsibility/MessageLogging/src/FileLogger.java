@@ -8,14 +8,13 @@
  *
  * @author fa20-bse-001
  */
-public class ErrorLogger extends AbstractLogger {
-
-    public ErrorLogger(int level) {
+public class FileLogger extends AbstractLogger {
+    public FileLogger(int level){
         this.level = level;
     }
 
     @Override
-    protected void write(String message) {
-        System.out.println("Error Console::Logger: " + message);
+    protected void write(String message) {		
+        System.out.println("File::Logger: " + message);
     }
 }

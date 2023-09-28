@@ -9,13 +9,12 @@
  * @author fa20-bse-001
  */
 public class ConsoleLogger extends AbstractLogger {
-
-    public ConsoleLogger(int level) {
+    public ConsoleLogger(int level){
         this.level = level;
     }
 
     @Override
-    protected void write(String message) {
+    protected void write(String message) {		
         System.out.println("Standard Console::Logger: " + message);
     }
 }

@@ -8,16 +8,13 @@
  *
  * @author fa20-bse-001
  */
-public class DatabaseLogger extends AbstractLogger {
-
-    public DatabaseLogger(int level) {
+public class WarningLogger extends AbstractLogger {
+    public WarningLogger(int level){
         this.level = level;
     }
 
     @Override
-    protected void write(String message) {
-        System.out.println("Database::Logger: " + message);
-        // You can implement the database logging logic here.
+    protected void write(String message) {		
+        System.out.println("Warning Console::Logger: " + message);
     }
 }
-
